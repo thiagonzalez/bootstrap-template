@@ -2,9 +2,77 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap Template</title>
+
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
 
   <body>
-    <p>hello world!</p>
+    <header class="header container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <div class="header__wrapper">
+            <h1>High-School Diploma 2017</h1>
+
+            <span class="credits">
+              <i class="circle">14</i>
+              Credits Left!    
+            </span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+          <div class="status">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="30"></div>
+            </div>
+
+            <span class="status__text"><strong>14</strong> / 30</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__filter">
+        <form action="#">
+          <div class="form-group">
+            <label for="filter__requirements">Requirements</label>
+            <select name="filter__requirements" id="filter__requirements">
+              <option value="show_all">Show All</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <span>Credits</span>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="filter__credits__all" value="all">
+              <label class="form-check-label" for="filter__credits__all">All</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="filter__credits__earned" value="earned">
+              <label class="form-check-label" for="filter__credits__earned">Earned</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="filter__credits__planned" value="planned">
+              <label class="form-check-label" for="filter__credits__planned">Planned</label>
+            </div>
+  
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="filter__credits__remaining" value="remaining">
+              <label class="form-check-label" for="filter__credits__remaining">Remaining</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    
   </body>
 </html>

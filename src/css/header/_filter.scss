@@ -1,0 +1,42 @@
+.header__filter {
+  margin-top: 20px;
+
+  form {
+    background-color: #f1f1f1;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+
+    .form-group {
+      border-right: 1px solid #e5e5e5;
+      padding-right: 20px;
+      margin: 0 20px 0 0;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      &:last-child {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+    }
+
+    span, label {
+      font-size: 0.85rem;
+      color: #737373;
+      margin: 0 20px 0 0;
+    }
+
+    select {
+      height: 35px;
+      background-color: #fff;
+      width: 300px;
+      font-size: 0.85rem;
+      color: #737373;
+      border-color: #e5e5e5;
+    }
+  }
+}
