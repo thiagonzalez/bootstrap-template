@@ -2,6 +2,7 @@ const {src, dest, parallel, watch} = require('gulp');
 const sass = require('gulp-sass');
 const connect = require('gulp-connect');
 const htmlmin = require('gulp-htmlmin');
+const deployGH = require('gulp-gh-pages');
 
 /* Transform sass files into CSS */
 function css() {
@@ -18,6 +19,7 @@ function server() {
   });
 }
 
+/* Compile HTML */
 function html() {
   return src('./src/**/*.html')
     .pipe(htmlmin({
@@ -27,9 +29,19 @@ function html() {
     .pipe(dest('./dist'));
 }
 
+/* Push build to gh-pages */
+function deploy() {
+  css();
+  html();
+
+  return src("./dist/**/*")
+    .pipe(deployGH())
+}
+
 exports.css = css;
 exports.server = server;
 exports.html = html;
+exports.deploy = deploy;
 
 exports.default = function() {
   css();
