@@ -3,14 +3,15 @@
 
   form {
     background-color: #f1f1f1;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #e1e1e1;
     border-radius: 5px;
     padding: 5px 25px;
     display: flex;
     align-items: center;
+    margin: 0;
 
     .form-group {
-      border-right: 1px solid #e5e5e5;
+      border-right: 1px solid #e1e1e1;
       padding-right: 20px;
       margin: 0 20px 0 0;
       display: inline-flex;
@@ -24,19 +25,13 @@
       }
     }
 
-    span, label {
-      font-size: 0.85rem;
-      color: #737373;
-      margin: 0 20px 0 0;
-    }
+    span, label { margin: 0 20px 0 0 }
 
     select {
       height: 35px;
       background-color: #fff;
       width: 300px;
-      font-size: 0.85rem;
-      color: #737373;
-      border-color: #e5e5e5;
+      border-color: #ccc;
     }
   }
 }

@@ -7,3 +7,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.progress-bar { background-color: #82C31F; }
+
+.form-check-inline {
+  position: relative;
+
+  .form-check-input {
+    visibility: hidden;
+    position: absolute;
+
+    + .form-check-label {
+      position: relative;
+      padding-left: 25px;
+      cursor: pointer;
+
+      &:before {
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &:checked {
+      + .form-check-label {
+        &:after {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 6px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border: 3px solid #484848;
+          border-top: none;
+          border-right: none;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1326px;
+  }
+}

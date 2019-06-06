@@ -2,6 +2,15 @@
 
 @import 'config/settings';
 @import 'config/defaults';
+@import 'config/typography';
 
-@import 'header/wrapper';
-@import 'header/filter';
+@import 'components/header/wrapper';
+@import 'components/header/filter';
+
+@import 'components/subjects/annual-subjects';
+@import 'components/subjects/list';
+
+@media (max-width: 1200px) {
+    @import 'mobile/components/header/wrapper';
+    @import 'mobile/components/header/filter';
+}

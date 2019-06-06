@@ -1,21 +1,16 @@
-header {
+.header {
   padding: 35px 0 20px;
 
   .header__wrapper {
     display: flex;
     align-items: center;
   
-    h1 {
+    .rank-1 {
       display: inline-block;
-      font-size: 1.4rem;
-      font-weight: bold;
       margin: 0 20px 0 0;
     }
   
     .credits {
-      font-size: 0.85rem;
-      color: #737373;
-    
       .circle {
         font-style: normal;
         display: inline-block;
@@ -46,6 +41,8 @@ header {
       display: block;
       margin-left: 10px;
       font-size: 0.85rem;
+
+      strong { color: #82C31F; }
     }
   }
 }

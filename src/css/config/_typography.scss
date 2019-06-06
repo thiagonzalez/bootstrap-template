@@ -1,0 +1,31 @@
+.rank-1, .rank-2, .rank-3, .rank-5, .rank-6 {
+  color: #484848;
+  margin: 0;
+}
+
+.rank-1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.rank-2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.rank-3 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.rank-5 {
+  font-size: 0.85rem;
+  color: #737373;
+}
+
+.rank-6 {
+  font-size: 0.75rem;
+}
+
+.uppercase { text-transform: uppercase }
+.lighter { color: #aeaeae; }
