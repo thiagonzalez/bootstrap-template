@@ -1,5 +1,6 @@
 ## Installation
 First, you need to execute `yarn install` so you can have all the dependencies installed.
+
 **PS: You can find instructions to install yarn [here](https://yarnpkg.com/en/docs/install).**
 
 ## Start the server
