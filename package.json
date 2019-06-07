@@ -1,5 +1,12 @@
 {
+  "name": "bootstrap-template",
+  "author": "Thiago Gonzalez",
   "license": "ISC",
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "deploy": "gulp deploy"
+  },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
