@@ -23,12 +23,12 @@ body {
       cursor: pointer;
 
       &:before {
+        content: '';        
         width: 18px;
         height: 18px;
         background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 3px;
-        content: '';
         display: block;
         position: absolute;
         top: 0;

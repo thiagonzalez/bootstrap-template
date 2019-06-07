@@ -39,9 +39,9 @@
       position: relative;
 
       &:after {
+        content: '';
         border: 1px solid $primary-color;
         position: absolute;
-        content: '';
         display: block;
         top: 1px;
         right: 1px;

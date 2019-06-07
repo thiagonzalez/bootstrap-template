@@ -46,10 +46,10 @@
     }
 
     &:after, &:before {
+      content: '';
       top: 100%;
       right: 10px;
       border: solid transparent;
-      content: '';
       height: 0;
       width: 0;
       position: absolute;
