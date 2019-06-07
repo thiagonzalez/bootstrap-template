@@ -37,6 +37,7 @@
       background-color: $primary-color-darken;
       border: none;
       position: relative;
+      cursor: pointer;
 
       &:after {
         content: '';
