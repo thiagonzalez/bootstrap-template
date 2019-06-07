@@ -11,8 +11,14 @@
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden;
     padding: 8px 12px;
+
+    .tooltip-element {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      z-index: 20;
+    }
 
     .tags {
       display: none;
@@ -34,7 +40,7 @@
       padding-left: 52px;
       cursor: pointer;
 
-      .rank-3 { color: $primary-color }
+      .rank-3 { color: $primary-color-darken }
 
       &:before {
         content: '+';
