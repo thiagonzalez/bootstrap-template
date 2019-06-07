@@ -1,0 +1,54 @@
+.subjects-columns {
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  header {
+    padding: 15px 0 5px;
+    .rank-2 { margin: 0 }
+  }
+
+  &--active {
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    header {
+      background-color: #f1f1f1;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .subjects-list {
+      padding-left: 10px; 
+      padding-right: 10px; 
+    }
+  }
+
+  &__action {
+    padding: 20px 0;
+    background-color: $primary-color;
+    text-align: center;
+
+    button {
+      padding: 10px 15px;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 5px;
+      background-color: $primary-color-darken;
+      border: none;
+      position: relative;
+
+      &:after {
+        border: 1px solid $primary-color;
+        position: absolute;
+        content: '';
+        display: block;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

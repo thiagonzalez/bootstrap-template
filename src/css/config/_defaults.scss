@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.progress-bar { background-color: #82C31F; }
+.progress-bar { background-color: $secondary-color }
 
 .form-check-inline {
   position: relative;

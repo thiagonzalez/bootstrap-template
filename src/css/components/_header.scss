@@ -1,7 +1,7 @@
 .header {
   padding: 35px 0 20px;
 
-  .header__wrapper {
+  &__wrapper {
     display: flex;
     align-items: center;
   
@@ -20,13 +20,13 @@
         text-align: center;
         color: #fff;
         border-radius: 50%;
-        background-color: $pink;
+        background-color: $warning-color-darken;
         margin-right: 5px;
       }
     }
   }
   
-  .status {
+  &__status {
     display: flex;
     align-items: center;
     width: 100%;
@@ -37,12 +37,12 @@
       flex: 1 1;
     }
   
-    .status__text {
+    .status-text {
       display: block;
       margin-left: 10px;
       font-size: 0.85rem;
 
-      strong { color: #82C31F; }
+      strong { color: $secondary-color-darken }
     }
   }
 }

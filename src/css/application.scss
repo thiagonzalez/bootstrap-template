@@ -4,13 +4,13 @@
 @import 'config/defaults';
 @import 'config/typography';
 
-@import 'components/header/wrapper';
-@import 'components/header/filter';
+@import 'components/header';
+@import 'components/filter';
 
-@import 'components/subjects/annual-subjects';
-@import 'components/subjects/list';
+@import 'components/subjects-columns';
+@import 'components/subjects-list';
 
 @media (max-width: 1200px) {
-    @import 'mobile/components/header/wrapper';
-    @import 'mobile/components/header/filter';
+  @import 'mobile/components/header';
+  @import 'mobile/components/filter';
 }
