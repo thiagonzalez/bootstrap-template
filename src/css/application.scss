@@ -7,6 +7,7 @@
 @import 'components/header';
 @import 'components/filter';
 @import 'components/tooltip';
+@import 'components/credits';
 
 @import 'components/subjects-columns';
 @import 'components/subjects-list';
@@ -14,4 +15,5 @@
 @media (max-width: 1200px) {
   @import 'mobile/components/header';
   @import 'mobile/components/filter';
+  @import 'mobile/components/credits';
 }
